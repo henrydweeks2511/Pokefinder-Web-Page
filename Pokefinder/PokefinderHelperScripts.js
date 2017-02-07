@@ -8,14 +8,60 @@ $(document).ready(function () {
         $("#cityCheck").prop('checked', false);
     });
     $("#searchButton").click(function () {
+        var get = $("#searchBar").val();
         if (document.getElementById('cityCheck').checked) {
-
-            $("#cityResults").animate({ height: "show" }, "slow");
-            $("#nameResults").animate({ height: "hide" }, "slow");
+            if (get == "Chicago") {
+                $("#chicagoResults").animate({ height: "show" }, "slow");
+                $("#laResults").animate({ height: "hide" }, "slow");
+                $("#nyResults").animate({ height: "hide" }, "slow");
+                $("#pidgeyResults").animate({ height: "hide" }, "slow");
+                $("#weedleResults").animate({ height: "hide" }, "slow");
+                $("#ratattaResults").animate({ height: "hide" }, "slow");
+            }
+            else if (get == "New York") {
+                $("#nyResults").animate({ height: "show" }, "slow");
+                $("#laResults").animate({ height: "hide" }, "slow");
+                $("#chicagoResults").animate({ height: "hide" }, "slow");
+                $("#pidgeyResults").animate({ height: "hide" }, "slow");
+                $("#weedleResults").animate({ height: "hide" }, "slow");
+                $("#ratattaResults").animate({ height: "hide" }, "slow");
+            }
+            else if (get == "Los Angeles") {
+                $("#laResults").animate({ height: "show" }, "slow");
+                $("#nyResults").animate({ height: "hide" }, "slow");
+                $("#chicagoResults").animate({ height: "hide" }, "slow");
+                $("#pidgeyResults").animate({ height: "hide" }, "slow");
+                $("#weedleResults").animate({ height: "hide" }, "slow");
+                $("#ratattaResults").animate({ height: "hide" }, "slow");
+            }
+            else alert("Oops! I didn't recognize that search.")
         }
         if (document.getElementById('pokemonNameCheck').checked) {
-            $("#nameResults").animate({ height: "show" }, "slow");
-            $("#cityResults").animate({ height: "hide" }, "slow");
+            if (get == "Pidgey") {
+                $("#pidgeyResults").animate({ height: "show" }, "slow");
+                $("#weedleResults").animate({ height: "hide" }, "slow");
+                $("#ratattaResults").animate({ height: "hide" }, "slow");
+                $("#chicagoResults").animate({ height: "hide" }, "slow");
+                $("#nyResults").animate({ height: "hide" }, "slow");
+                $("#laResults").animate({ height: "hide" }, "slow");
+            }
+            else if (get == "Weedle") {
+                $("#weedleResults").animate({ height: "show" }, "slow");
+                $("#pidgeyResults").animate({ height: "hide" }, "slow");
+                $("#ratattaResults").animate({ height: "hide" }, "slow");
+                $("#chicagoResults").animate({ height: "hide" }, "slow");
+                $("#nyResults").animate({ height: "hide" }, "slow");
+                $("#laResults").animate({ height: "hide" }, "slow");
+            }
+            else if (get == "Ratatta") {
+                $("#ratattaResults").animate({ height: "show" }, "slow");
+                $("#pidgeyResults").animate({ height: "hide" }, "slow");
+                $("#weedleResults").animate({ height: "hide" }, "slow");
+                $("#chicagoResults").animate({ height: "hide" }, "slow");
+                $("#nyResults").animate({ height: "hide" }, "slow");
+                $("#laResults").animate({ height: "hide" }, "slow");
+            }
+            else alert("Oops! I didn't recognize that search.")
         }
         });
     });

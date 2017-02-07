@@ -11,15 +11,21 @@ h1{
 }
 .results{
     display:none;
-    margin:24px;
+    margin:auto;
     font-family:Britannic;
-    background-color:white;
-    position:center;
+    background-color:#ffd800;
+    color: #071672;
+    width:400px;
 }
 span{
     color: #ffd800;
     font-size:20px;
     font-family:Britannic;
+}
+table{
+    border-width:3px;
+    border-color: #071672;
+    position:center;
 }
 .checkPrompt{
     margin:14px
