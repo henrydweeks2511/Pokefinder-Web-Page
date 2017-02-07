@@ -12,13 +12,11 @@
     </script>
 </head>
 <body>
-    <h1>Pokefinder</h1>
+    <h1>Pokéfinder</h1>
     <div id="checkboxes">
         <span class="checkPrompt">Search by City</span>
         <input class="check" type="checkbox" id="cityCheck" />
-        <span class="checkPrompt">Search by Pokemon ID</span>
-        <input class="check" type="checkbox" id="pokemonIDCheck" />
-        <span class="checkPrompt">Search by Pokemon Name</span>
+        <span class="checkPrompt">Search by Pokémon Name</span>
         <input class="check" type="checkbox" id="pokemonNameCheck" />
     </div>
     <div class="search">
@@ -26,26 +24,7 @@
         <button type="button" id="searchButton">Search</button>
     </div>
     <div id="cityResults" class="results">
-        <table>
-            <tr>
-                <td>sample</td>
-                <td>sample</td>
-                <td>sample</td>
-            </tr>
-            <tr>
-                <td>sample</td>
-                <td>sample</td>
-                <td>sample</td>
-            </tr>
-            <tr>
-                <td>sample</td>
-                <td>sample</td>
-                <td>sample</td>
-            </tr>
-        </table>
-    </div>
-    <div id="iDResults" class="results">
-        <table>
+        <table id="cityTable">
             <tr>
                 <td>sample</td>
                 <td>sample</td>
@@ -64,7 +43,7 @@
         </table>
     </div>
     <div id="nameResults" class="results">
-        <table>
+        <table id="nameTable">
             <tr>
                 <td>sample</td>
                 <td>sample</td>
